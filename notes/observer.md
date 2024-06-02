@@ -9,7 +9,7 @@ In the case of [weather station](../head-first-design-patterns/src/main/java/hea
 the weather data gets updated from the sensors located
 in a weather station and we'd like to distribute the 
 weather info to a few weather display objects automatically. 
-Here there is a one-to-many dependency relationship 
+There is a one-to-many dependency relationship 
 between the weather station and the displays. 
 
 The interface `Subject` and `Observer` go like the following:
