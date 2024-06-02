@@ -1,7 +1,9 @@
+# Definition
 The Strategy Pattern defines a family of algorithms, encapsulates each one, 
 and makes them interchangeable. Strategy lets the algorithm vary independently 
 from clients that use it. 
 
+# Example
 The example given is [ducks](../head-first-design-patterns/src/main/java/headfirst/designpatterns/strategy/),
 where different variantions of ducks can have 
 different fly and quack behaviors. Following the design principle of isolating 
