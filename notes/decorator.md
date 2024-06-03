@@ -12,7 +12,7 @@ decorator are of the same supertype `Beverage`. The decorator
 takes an existing `Beverage` object as one of its attribute. 
 So multiple layers of decorators can be added on top of one 
 another sequentially. 
-| Class | Implementations | Relationship |
-| ----- | --------------- | ------------ |
-| Beverage (abstract) | Espresso, HouseBlend, etc. | Super class of both coffees and decorators |
-| CondimentDecorator (abstract) | Milk, Mocha, Whip, etc. | Super class of decorators | 
+| Abstract Class | Implementations | Relationship |
+| -------------- | --------------- | ------------ |
+| Beverage  | Espresso, HouseBlend, etc. | Super class of both coffees and decorators |
+| CondimentDecorator | Milk, Mocha, Whip, etc. | Super class of decorators | 
