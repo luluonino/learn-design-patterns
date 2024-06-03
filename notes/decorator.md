@@ -61,3 +61,16 @@ public class Milk extends CondimentDecorator {
 | -------------- | --------------- | ------------ |
 | Beverage  | Espresso, HouseBlend, etc. | Super class of both coffees and decorators |
 | CondimentDecorator | Milk, Mocha, Whip, etc. | Super class of decorators | 
+
+### `java.io`
+In `java.io`, basic `InputStream` classes provide different ways 
+of reading files. Decorators provide a way to customize the way 
+data is read. In this [example](../head-first-design-patterns/src/main/java/headfirst/designpatterns/decorator/io),
+a decorator class is defined to convert the input to lower case. 
+
+| (Abstract) Class | Implementations | Relationship |
+| ---------------- | --------------- | ------------ |
+| InputStream      | FileInputStream, etc | Super class of all |
+| FilterInputStrem | Decorator of InputStream | Super class of other decorators |
+
+
