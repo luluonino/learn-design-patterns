@@ -71,6 +71,6 @@ a decorator class is defined to convert the input to lower case.
 | (Abstract) Class | Implementations | Relationship |
 | ---------------- | --------------- | ------------ |
 | InputStream      | FileInputStream, etc | Super class of all |
-| FilterInputStrem | Decorator of InputStream | Super class of other decorators |
+| FilterInputStrem | LowerCaseInputStream | Super class of other decorators |
 
 
