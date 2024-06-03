@@ -6,10 +6,13 @@ alternative to subclassing for extending functionality.
 ## Example
 
 ### Coffee
-In the [coffee](../head-first-design-patterns/src/main/java/headfirst/designpatterns/decorator/starbuzz)
-example, both the coffee and the coffee
+Considering how a coffee 
+beverage is made, it usually consists of a base (espresso, dark roast, etc) 
+and several condiments as supplements (milk, cinnamon, mocha, etc). 
+In [coffee](../head-first-design-patterns/src/main/java/headfirst/designpatterns/decorator/starbuzz)
+both the coffee and the coffee
 decorator are of the same supertype `Beverage`. The decorator 
-takes an existing `Beverage` object as one of its attribute. 
+takes an existing `Beverage` object as an attribute. 
 So multiple layers of decorators can be added on top of one 
 another sequentially. 
 
