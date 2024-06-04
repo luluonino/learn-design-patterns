@@ -1,5 +1,6 @@
 # learn-design-patterns
-This repo contains the notes and sample codes I generated while learning about software design patterns
+This repo contains the notes and sample codes I generated while learning about software design patterns 
+using the book Head First Design Patterns.
 
 # Design Patterns
 1. [Strategy / Policy](notes/strategy.md)

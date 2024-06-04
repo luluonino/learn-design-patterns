@@ -4,7 +4,9 @@ for creating an object, but lets subclasses decide
 which class to instantiate. Factory Method lets a 
 class defer instantiation to subclasses. 
 
-
+The **Abstract Factory Pattern** provides an interface
+for creating families of related or dependent objects
+without specifying their concrete classes.
 
 ## Example: Pizza Store
 The whole idea behind the factory method pattern 
@@ -25,7 +27,14 @@ styles of PizzaStore.
 
 | Abstract class | Implementations | Relationship | 
 | -------------- | --------------- | ------------ |
-| PizzaStore     | NYStyleStore, ChicagoPizzaStore | Super class of all PizzaStore classes. Requires factory method `createPizza()` implemented in subclasses to handle the instantiating of a Pizza |
+| PizzaStore     | NYPizzaStore, ChicagoPizzaStore | Super class of all PizzaStore classes. Requires factory method `createPizza()` implemented in subclasses to handle the instantiating of a Pizza |
 | Pizza          | NYStyle\*Pizza, ChicagoStyle\*Pizza | Super class of all Pizza classes. Gets instantiated only in PizzaStore subclasses. |
 
+In [pizza abstract factory](../head-first-design-patterns/src/main/java/headfirst/designpatterns/factory/pizzaaf),
+even ingredients are created using the factory method. 
 
+| Interface / Abstract class | Implementations | Relationship | 
+| -------------------------- | --------------- | ------------ |
+| PizzaStore     | NYPizzaStore, ChicagoPizzaStore | Super class of all PizzaStore classes. Requires factory method `createPizza()` implemented in subclasses to handle the instantiating of a Pizza |
+| Pizza          | CheesePizza, PepperoniPizza, etc | Super class of all Pizza classes. Gets instantiated only in PizzaStore subclasses. |
+| PizzaIngredientFactory | NYPizzaIngredientFactory, ChicagoPizzaIngredientFactory | Interface for ingredient factories. Each variant of ingredient factory instantiates the objects of Dough, Sauce, etc for a different style of PizzaStore. |
