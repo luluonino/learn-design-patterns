@@ -5,6 +5,7 @@ This repo contains the notes and sample codes I generated while learning about s
 1. [Strategy / Policy](notes/strategy.md)
 2. [Observer](notes/observer.md)
 3. [Decorator](notes/decorator.md)
+4. [Factory](notes/factory.md)
 
 # Design Principles
 1. Identify the aspects of your application that vary and separate them from what stays the same.
@@ -12,3 +13,4 @@ This repo contains the notes and sample codes I generated while learning about s
 3. Favor composition over inheritance.
 4. Strive for loosely coupled designs between objects that interact.
 5. Classes should be open for extension, but closed for modification.
+6. Depen upon abstractions. Do not depend upon concrete classes.
