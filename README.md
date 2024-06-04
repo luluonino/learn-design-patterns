@@ -14,4 +14,4 @@ using the book Head First Design Patterns.
 3. Favor composition over inheritance.
 4. Strive for loosely coupled designs between objects that interact.
 5. Classes should be open for extension, but closed for modification.
-6. Depen upon abstractions. Do not depend upon concrete classes.
+6. Depend upon abstractions. Do not depend upon concrete classes.
