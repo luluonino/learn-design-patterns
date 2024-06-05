@@ -32,8 +32,7 @@ follows the same logic.
 ### Multithreading
 
 To fix the problem with multithreading, there are a few optioins: 
-1. `synchronized` 
-In [thread safe singleton](../head-first-design-patterns/src/main/java/headfirst/designpatterns/singleton/threadsafe)
+1. In [thread safe singleton](../head-first-design-patterns/src/main/java/headfirst/designpatterns/singleton/threadsafe)
 a `synchronized` keyword is added to the declaration of the `getInstance()` method 
 to prevent multiple threads from calling this method at the same time and intializing
 multiple instances. 
