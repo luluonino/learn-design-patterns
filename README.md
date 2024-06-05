@@ -7,6 +7,7 @@ using the book Head First Design Patterns.
 2. [Observer](notes/observer.md)
 3. [Decorator](notes/decorator.md)
 4. [Factory](notes/factory.md)
+5. [Singleton](notes/singleton.md)
 
 # Design Principles
 1. Identify the aspects of your application that vary and separate them from what stays the same.
