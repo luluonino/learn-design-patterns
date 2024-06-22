@@ -23,4 +23,6 @@ different appliance actions.
 
 For an example remote control with more buttons,
 see [remote control](../head-first-design-patterns/src/main/java/headfirst/designpatterns/command/remote). 
+Using the `FunctionalInterface` annotation, it can be simplified without actually implementing different Command classes.
+
 
